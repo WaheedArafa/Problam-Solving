@@ -10,14 +10,14 @@ cin >> t;
 while (t--) {
     int n;
     cin >> n;
-    int max_sum = 0, optimal_x = 2;
-    for (int x = 2; x <= n; ++x) {
-        int sum = (n / x) * x * (1 + n / x) / 2;
-        if (sum > max_sum) {
-            max_sum = sum;
-            optimal_x = x;
+    int max = 0, x = 2;
+    for (int i = 2; i <= n; ++i) {
+        int sum = (n / i) * i * (1 + n / i) / 2;
+        if (sum > max) {
+            max = sum;
+            x = i;
         }
     }
-    cout << optimal_x << endl;
+    cout << x << endl;
 }
 }
