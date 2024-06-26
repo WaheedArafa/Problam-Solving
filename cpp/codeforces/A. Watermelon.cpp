@@ -1,15 +1,13 @@
-#include <bits/stdc++.h>
-using namespace std ;
-int main(){
-int w; cin >> w;
-if (w&1)
+#include<bits/stdc++.h>
+using namespace std;
+int main()
 {
-    cout << "NO";
-}
-else if (w = 2){
-    cout << "NO";
-}
+int w;
+cin >> w;
+if (w % 2 == 0 && w > 2) {
+        cout << "YES" << endl;
+} 
 else {
-    cout << "YES";
+    cout << "NO" << endl;
 }
 }
